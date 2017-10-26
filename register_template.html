@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dodgerblue;
+}
+
+li {
+    float: left;
+	    list-style-type: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    
+	text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.gobuttons {
+  
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet"	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<img src = "sms.png">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">DAW Forum</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+	   </ul>
+	   <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Login</a></li>
+      <li class = "active"><a href="#">Register</a></li>
+	  </ul>
+  </div>
+</nav>
+<div class ="container">
+<!-- BEGIN REGISTER -->
+<div class = "message">{MESSAGE}</div>
+<br>
+<h1 style ="text-align:center"> Register</h1>
+<form type ="post" action="/register_action.php">
+<p>Name:</p>
+<input  class="form-control"type ="text" name = "name" value = "{NAME}"></input>
+<p>Email:</p>
+<input  class="form-control"type ="text" name = "email" value = "{EMAIl}"></input>
+<p>Password:</p>
+<input  class="form-control"type ="password" name = "pass1"></input>
+<p>Password confirmation:</p>
+<input  class="form-control"type ="password" name = "pass2"></input>
+<br>
+<!-- END REGISTER -->
+<div class ="text-center">
+<button class="btn btn-primary">Go</button>  <button class="btn btn-primary">Clear</button>
+</div>
+</form>
+</div>
+</body>
+<footer><ul><li><p>&copy; 2017 Desenvolvimento de Aplicaç&otilde;es para a Web</p></li> <li style = "float: right"> <p>Designed by: Jos&eacute; Teixeira</p></li></ul></footer>
+</html>
